@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}{% endblock title %}</title>
+	<link rel="stylesheet" href="/static/css/apps.css">
+  <link rel="stylesheet" href="/static/css/login.css">
+	<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/css/shop-homepage.css">
+
+  {# add 23 jul 2015 borrar#}
+  <link rel="stylesheet" href="/static/css/sl-slide.css">
+	
+
+	<script src="/static/js/jquery.js"></script>
+  <script src="/static/js/jquery.form.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/style.js"></script>
+	<script src="/static/js/showdown.js"></script>
+  <script src="/static/js/holder.js"></script>
+
+</head>
+
+<header id="header" class="row">    
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          {# logotipo de la empresa #}
+          <a class="navbar-brand-mio" href="/inicio/">
+            <img class="img-responsive" src="/static/images/logo/logo_eviglassss.png" style="max-width:80px; margin-top: -7px;">
+          </a>
+
+        </div>
+        <div class="collapse navbar-collapse" style="Semibold:30px;">
+          <ul class="nav navbar-nav pull-right">
+
+
+
+            <li><a href="/inicio/">Inicio</a></li>
+            {# <li><a href="/empresa/">Empresa</a></li> #}
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/productos/">Vasos Girados</a></li>
+                <li><a href="/productos/jarra/">Jarras</a></li>
+                <li><a href="/productos/vaso_maquina/">Vasos de Máquina</a></li>
+                <li><a href="/productos/florero/">Floreros</a></li>
+                <li><a href="/productos/florero_molde_jarra/">Floreros molde de jarra</a></li>
+                <li><a href="/productos/coctelero/">Cocteleros</a></li>
+                <li><a href="/productos/cisne/">Cisnes</a></li>
+                <li><a href="/productos/nuevo/">Nuevo</a></li>
+
+                <li class="divider"></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Productos con Tabajo Artesanal <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/productos/tallados/">Vasos Tallados a mano Artesanalmente</a></li>
+                <li><a href="/productos/serigrafiado_vitr/">Serigrafiado Vitrificado</a></li>
+                <li><a href="/productos/serigrafiado_simple/">Serigrafiado Simple</a></li>
+                <li class="divider"></li>
+              </ul>
+            </li>
+
+            <li><a href="/novedades/">Novedades</a></li>
+            <li><a href="/ofertas/">Ofertas</a></li>
+            <li><a href="/contactos/">Contactos</a></li>
+            {# <li><a href="/login/">Log In</a></li> #}
+
+
+
+          </ul>
+        </div><!--/.nav-collapse --> 
+      </div>
+    </div>
+  </div>
+</header>
+
+<body>
+	{% block content %}
+		
+	{% endblock content %}
+</body>
+
+<footer id="footer">
+  <div class="container">
+    <p class="col-md-6">© Compyring 2018 by <i><a href="http://www.linkux-it.com" rel="external" target="_blank">Developer@E-Mr.</a></i></p>
+  </div> 
+</footer>
+</html>
