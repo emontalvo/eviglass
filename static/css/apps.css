@@ -3,9 +3,14 @@
 
 /*STYLE NAV BAR*/
 
-.nav-1{
+.nav-bg{
 	background-color: #0B243B;
+    /*color:#CEE3F6;*/
 }
+.color-txt{
+    color:#CEE3F6;
+}
+
 .nav-link-mio{
 
 	display: block;
@@ -22,9 +27,18 @@
 
 /*STYLE BODY*/
 
-.body-1{
+.body-bg{
 	background-color: #EFF8FB;
 }
+
+.contact-bg{
+    background-color: #CEE3F6;
+}
+
+.bgcolor-txt{
+    color: #3E567E;
+}
+
 /*END STYLE BODY*/
 
 

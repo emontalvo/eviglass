@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+{% block title %}
+	Eviglass
+{% endblock title %}
+
+{% block content %}
+<div class="col-md-12 body-bg">
+
+<!--/.sub-nav- navbar -->
+<div class="navbar">
+	<div class="subnav">
+	    <div class="container">
+	        <div class="navbar-header">
+	        
+	        	<h2 style="font-weight: 900;">CONTÁCTANOS</h2>
+
+	        </div>
+	        <div class="collapse navbar-collapse" style="Semibold:30px;">
+		        <ul class="nav navbar-nav pull-right">
+
+		        	<li><a href="/Portal/">Inicio</a></li>
+		        	<li><a href="/contactos/">/ Contactos</a></li>
+
+		        </ul>
+	        </div><!--/.nav-collapse --> 
+	    </div>
+	</div>
+</div>
+<!--/.END sub-nav - navbar -->
+
+<!--/.BODY -->
+
+<div class='aling-body'>
+	<section id="color-section" class="degradado-section">
+
+		<div style="text-align: center;">
+			<h2 class=""> PLANTA EVIGLASS</h2> 
+			<h4>Cochabamba-Bolivia</h4> 
+		</div>
+
+	</section >
+	<section id="recent-works" class="degradado-cabeza">
+				
+		<div style="text-align: center;">
+			<h2 class=""> DIRECCION </h2>  
+		</div>
+
+		<hr class="prettyline">	
+
+	</section >
+
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+
+			<section id="color-section-galery">
+					<h2>Dir.:</h2>
+					<div style="text-align: center;">
+						<h3>Avenida petrolera, km 7½ Iglesia Santa Vera Cruz, segundo semaforo, Av. París y J. Alborda</h3>  
+					</div><br>
+
+					<h2>Telf.:</h2>
+					<div style="text-align: center;">
+						<h3><span class="glyphicon glyphicon-phone-alt"> 4760250 </span></h3>
+						<h3><span class="glyphicon glyphicon-phone"> 76971655 </span></h3>  
+					</div>
+					<h2>E-mail:</h2>
+					<div style="text-align: center;">
+						<h3><span class="glyphicon glyphicon-user"> eviglass@gmail.com </span></h3>
+						  
+					</div>
+
+			</section >
+
+		</div>
+
+		<div style='color:#000000;' class=".col-xs-12 col-sm-6 col-md-8">
+			
+			{# GOOGLE MAPS #}
+			<section>
+				<div>
+				    <style>
+				      #map {
+				      	display: block;
+				        height: 430px;
+				        width: 100%;
+				      }
+				    </style>
+				    <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+					<script>
+						// In the following example, markers appear when the user clicks on the map.
+						// Each marker is labeled with a single alphabetical character.
+						var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+						var labelIndex = 0;
+
+						function initialize() {
+						  var bangalore = { lat: -17.459725080181023, lng: -66.11998200416565 };
+						  var map = new google.maps.Map(document.getElementById('map'), {
+						    zoom: 17,
+						    center: bangalore
+						  });
+
+						  // This event listener calls addMarker() when the map is clicked.
+						  google.maps.event.addListener(map, function(event) {
+						    addMarker(event.latLng, map);
+						  });
+
+						  // Add a marker at the center of the map.
+						  addMarker(bangalore, map);
+						}
+
+						// Adds a marker to the map.
+						function addMarker(location, map) {
+						  // Add the marker at the clicked location, and add the next-available label
+						  // from the array of alphabetical characters.
+						  var marker = new google.maps.Marker({
+						    position: location,
+						    label: "Eviglass",
+						    map: map
+						  });
+						}
+
+						google.maps.event.addDomListener(window, 'load', initialize);
+
+				    </script>
+
+				    <hr class="prettyline">
+
+				    <div id="map" class="img-responsive"></div>
+
+				</div>
+			</section>
+			{# END GOOGLE MAPS #}
+		</div>
+	</div>
+
+	<section id="recent-works" class="suc-degradado">
+			<div style="text-align: center;">
+				<h2 class=""> SUCURSALES EN BOLIVIA </h2>  
+			</div>
+		<hr class="prettyline">
+	</section >
+
+	<section id="color-section-galery">
+		<div class="row">
+			<div class="col-sm-2 col-md-2">
+				<section >
+					<div style="text-align: center;">
+						<h3>LA PAZ</h4>
+						<h4>Direccion: El Alto </h4>
+						<h4>Telfs: 2333435 - 77723437</h4>
+						<h4>Email: Elalto@gmail.com</h4>
+					 
+					</div>
+				</section >
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<section >
+					<div style="text-align: center;">
+						<h3>SANTA CRUZ</h4>
+						<h4>Direccion:  </h4>
+						<h4>Telfs: </h4>
+						<h4>Email: </h4>
+					 
+					</div>
+				</section >
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<section >
+					<div style="text-align: center;">
+						<h3>SUCRE</h4>
+						<h4>Direccion:  </h4>
+						<h4>Telfs: </h4>
+						<h4>Email: </h4>
+					 
+					</div>
+				</section >
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<section >
+					<div style="text-align: center;">
+						<h3>POTOSI</h4>
+						<h4>Direccion:  </h4>
+						<h4>Telfs: </h4>
+						<h4>Email: </h4>
+					 
+					</div>
+				</section >
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<section >
+					<div style="text-align: center;">
+						<h3>TARIJA</h4>
+						<h4>Direccion:  </h4>
+						<h4>Telfs: </h4>
+						<h4>Email: </h4>
+					 
+					</div>
+				</section >
+			</div>
+			<div class="col-sm-2 col-md-2">
+				<section >
+					<div style="text-align: center;">
+						<h3>BENI</h4>
+						<h4>Direccion:  </h4>
+						<h4>Telfs: </h4>
+						<h4>Email: </h4>
+					 
+					</div>
+				</section >
+			</div>
+			
+		</div>
+	</section>
+<!--/.END BODY -->
+
+		
+<!-- SECTION FOOTER BODY-->	
+	<section id="recent-works" class="contact-bg">
+		<div style="text-align: center;">
+			<h3 class="">Contáctanos</h3>
+			<h4>email: eviglass@gmail.com</h4>
+			<h4>telfs: 44546345 - 74553445</h4>
+			<h4>siguenos en: Facebook - twiter</h4>
+		</div>
+	</section>
+</div>
+	<!--END SECTION FOOTER BODY-->
+
+</div>
+
+<!--/.END BODY -->
+
+	
+</div>
+{% endblock content %}

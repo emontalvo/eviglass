@@ -16,25 +16,31 @@
 	<script src="/static/js/popper.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
 
-
 </head>
 
 
 
-<nav class="navbar navbar-light nav-1 justify-content-between">
-
-    
-  
+<nav class="navbar navbar-expand-md nav-bg navbar-dark">
+    <!-- Brand -->
     <a class="" href="/Portal/">
         <img class="img-responsive" src="/static/images/logo/logo_eviglassss.png" style="max-width:80px; margin-top: -0px;">
     </a>
 
-    <ul class="nav justify-content-end">
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav justify-content-end">
         <li class="nav-item">
-            <a class="nav-link" href="/Portal/">Inicio</a>
+            <a class="nav-link color-txt" href="/Portal/">Inicio</a>
         </li>
-        <li class="dropdown nav-link">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos<b class="caret"></b></a>
+
+        <!-- Dropdown -->
+        <li class="dropdown nav-item">
+            <a href="#" class="nav-link dropdown-toggle color-txt" data-toggle="dropdown">Productos<b class="caret"></b></a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/productos/">Vasos Girados</a></li>
                 <li><a class="dropdown-item" href="/productos/jarra/">Jarras</a></li>
@@ -49,8 +55,8 @@
             </ul>
         </li>
 
-        <li class="dropdown nav-link">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Productos con Tabajo Artesanal <b class="caret"></b></a>
+        <li class="dropdown nav-item">
+            <a href="#" class="nav-link dropdown-toggle color-txt" data-toggle="dropdown"> Productos con Tabajo Artesanal <b class="caret"></b></a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/productos/tallados/">Vasos Tallados a mano Artesanalmente</a></li>
                 <li><a class="dropdown-item" href="/productos/serigrafiado_vitr/">Serigrafiado Vitrificado</a></li>
@@ -58,19 +64,23 @@
                 <li class="divider"></li>
             </ul>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link" href="/novedades/">Novedades</a>
+            <a class="nav-link color-txt" href="/novedades/">Novedades</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/ofertas/">Ofertas</a>
+            <a class="nav-link color-txt" href="/ofertas/">Ofertas</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/contactos/">Contactos</a>
+            <a class="nav-link color-txt" href="/contactos/">Contactos</a>
         </li>
         
     </ul>
-        
+    </div> 
 </nav>
+
+
+
 <body>
 	{% block content %}
 		

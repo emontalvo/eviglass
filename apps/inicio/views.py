@@ -21,9 +21,22 @@ def index(request):
 
 
 
-# class Novedades(ListView):
-# 	context_object_name = "producto"
-# 	queryset = RegistrarProducto.objects.filter(webnovedad='true')[0:5]
-# 	template_name = 'inicio/novedades.html'
 
+
+
+
+
+class Novedades(TemplateView):
+	# context_object_name = "producto"
+	# queryset = RegistrarProducto.objects.filter(webnovedad='true')[0:5]
+	template_name = 'inicio/novedades.html'
+
+class Ofertas(TemplateView):
+	# context_object_name = "producto"
+	# queryset = RegistrarProducto.objects.filter(weboferta='true')[0:5]
+	template_name = 'inicio/ofertas.html'
+
+class Contactos(TemplateView):
+
+	template_name = 'inicio/contactos.html'
 
