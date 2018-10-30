@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'apps.inicio',
+
+    'apps.users.admin_sistemas',
     # 'apps.inicio.apps.InicioConfig',
 ]
 

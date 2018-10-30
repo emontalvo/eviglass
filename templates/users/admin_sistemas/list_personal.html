@@ -1,0 +1,64 @@
+{% extends "base_users.html" %}
+
+{% block title %}
+  Sitio de Administracion
+{% endblock title %}
+
+{% block content %}
+
+<div class='aling-body'>
+
+	<section id="color-section">
+		<center><h1 class="txt-body-title">Administracion del Personal</h1></center>
+		<hr class="prettyline">
+
+		<div>
+			<a href="/users/personal/" class="btn btn-success btn-lg" role="button">Agregar Personal Nuevo</a>
+		</div>
+	</section>
+
+<div>
+	{# LISTA DE PROD EN TABLA #}
+	<table class="table table-striped">
+		<div style="text-align: center;">
+			<h2 class="txt-body-subtitle">LISTA DEL PERSONAL</h2>  
+		</div><br>
+	    <thead class="txt-body-nomtable">
+	        <tr>
+	            <th>Nro.</th>
+	            <th>Nombre</th>
+	            {# <th>C.I.</th> #}
+	            {# <th>E-mail</th> #}
+	            <th>Direccion</th>
+	            <th>Telefono</th>
+	            {# <th>Cargo</th> #}
+	            <th>Modificar</th>
+	            <th>Eliminar</th>
+
+	        </tr>
+	    </thead>
+	    <tbody>
+	    	{% for lista_pers in personal %}
+	        <tr>
+	            <td><h4>{{forloop.counter}}</h4></td>
+	            <td><h4>{{lista_pers.nombre}}</h4></td>
+	            {# <td><h4>{{lista_pers.ci}}</h4></td> #}
+	            {# <td><h4>{{lista_pers.email}}</h4></td> #}
+	            <td><h4>{{lista_pers.direccion}}</h4></td>
+				<td><h4>{{lista_pers.telefono}}</h4></td>
+				{# <td><h4>{{lista_pers.cargo}}</h4></td> #}
+				
+
+	            {% endfor %}
+	        </tr>
+	        
+	    </tbody>
+	</table>
+	{# LISTA DE PROD EN TABLA #}	
+</div>
+
+</div>
+{% endblock content %}
+<ol>
+<li>...</li>
+</ol>
