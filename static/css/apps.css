@@ -1,4 +1,10 @@
-
+/*.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $zindex-fixed;
+}*/
 
 
 /*STYLE NAV BAR*/
@@ -37,6 +43,10 @@
 
 .bgcolor-txt{
     color: #3E567E;
+}
+
+.centered{
+  text-align: center;
 }
 
 /*END STYLE BODY*/

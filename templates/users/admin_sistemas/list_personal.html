@@ -13,7 +13,7 @@
 		<hr class="prettyline">
 
 		<div>
-			<a href="/users/personal/" class="btn btn-success btn-lg" role="button">Agregar Personal Nuevo</a>
+			<a href="/users/personal/" class="btn btn-success btn-lg" role="button">Agregar Nuevo Personal</a>
 		</div>
 	</section>
 
@@ -32,8 +32,8 @@
 	            <th>Direccion</th>
 	            <th>Telefono</th>
 	            {# <th>Cargo</th> #}
-	            <th>Modificar</th>
-	            <th>Eliminar</th>
+	            <th>Acciones</th>
+	            
 
 	        </tr>
 	    </thead>
@@ -47,9 +47,12 @@
 	            <td><h4>{{lista_pers.direccion}}</h4></td>
 				<td><h4>{{lista_pers.telefono}}</h4></td>
 				{# <td><h4>{{lista_pers.cargo}}</h4></td> #}
-				
 
-	            {% endfor %}
+				<td><a class="btn btn-info" href="/edit/{{lista_pers.id}}">Editar</a>
+					<a class="btn btn-danger" href="/delete/{{lista_pers.id}}">Eliminar</a>
+				</td>
+
+			{% endfor %}
 	        </tr>
 	        
 	    </tbody>

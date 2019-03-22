@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+from django.urls import reverse
 
 class Personal(models.Model):
 
@@ -16,4 +17,4 @@ class Personal(models.Model):
 		return self.nombre
 
 	def get_absolute_url(self):
-		return reverse('personal_edit', kwargs={'pk': self.pk})
+		return reverse('personal-detail', kwargs={'pk': self.pk})
