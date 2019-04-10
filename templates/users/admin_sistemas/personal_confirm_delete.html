@@ -1,0 +1,41 @@
+
+{% extends "base_users.html" %}
+
+{% block title %}
+  Sitio de Administracion
+{% endblock title %}
+
+{% block content %}
+
+<div class='aling-body'>
+
+	<section id="color-section">
+		<center><h1 class="txt-body-title">Administracion del Personal</h1></center>
+		<hr class="prettyline">
+	</section>
+
+<div>
+
+
+
+	    	
+<h1>Borrar Personal</h1>
+
+<p><h3>¿Estás seguro de que quieres borrar el personal: {{ personal }}?</h3></p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <!-- <input type="submit" value="si, Borrar."> -->
+  <button type="submit" class="btn btn-lg btn-danger">Si, Borrar</button>
+  <a href="/users/list_personal/" class="btn btn-lg btn-primary" role="button">Cancelar</a>
+</form>
+
+
+
+</div>
+
+</div>
+{% endblock content %}
+<ol>
+<li>...</li>
+</ol>

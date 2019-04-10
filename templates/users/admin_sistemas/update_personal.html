@@ -6,16 +6,30 @@
 
 {% block content %}
 
+{% load crispy_forms_tags %}
+
+
 <div class="container">
 	<section id="color-section-galery">
 	
 		<div style="text-align: center;">
-			<h1 class="">Productos Nuevos</h1>  
+			<h1 class="">Actualizar datos del personal</h1>  
 		</div><br>
 
 		<div class="row">
 		 <form method="post">{% csrf_token %}
-		 	{{form.as_p}}
+		 	<!-- {{form.as_p}} -->
+		 	{{form|crispy}}
+
+		 	<!-- <div class="form-group">
+			<label class="col-sm-2 control-label">Nombre </label>
+			<input type="text" class="form-control col-sm-6" name="personal.nombre">
+			{{personal.nombre}}
+
+			</div> -->
+
+			
+
 		 	<p><button type="submit" class="btn btn-success">Guardar</button>
 		 	<a href="/users/list_personal/" class="btn btn-primary" role="button">Cancelar</a></p>
 		 </form>

@@ -31,14 +31,21 @@ class PersonalList(ListView):
 	context_object_name = 'personal'
 	queryset = Personal.objects.all()
 
-class PersonalUpdate(UpdateView): 
-    model = Personal
-
 # class PersonalUpdate(UpdateView):
-#     form_class = addPersForm
-#     model = Personal
-#     template_name = 'users/admin_sistemas/edit_personal.html'
-#     success_url = '/users/list_personal/'
+# 	template_name = 'users/admin_sistemas/update_personal.html'
+# 	# form_class = addPersForm
+# 	model = Personal
+# 	fields = ['nombre','ci','email','direccion','telefono','cargo']	
+# 	success_url = '/users/list_personal/'
+
+
+class PersonalUpdate(UpdateView):
+    
+    model = Personal
+    form_class = addPersForm
+    template_name = 'users/admin_sistemas/update_personal.html'
+    success_url = '/users/list_personal/'
+
 # def edit(request, id):
 # 	lista_pers = Personal.objects.get(pk=id)
 # 	context = {
@@ -46,10 +53,16 @@ class PersonalUpdate(UpdateView):
 # 	}
 # 	return render(request, 'edit.html', context)
 
-def delete(request, id):
-	lista_pers = Personal.objects.get(pk=id)
-	lista_pers.delete()
-	return redirect('/users/list_personal/')
+
+class PersonalDelete(DeleteView):
+	template_name = 'users/admin_sistemas/personal_confirm_delete.html'
+	model = Personal
+	success_url = '/users/list_personal/'
+
+# def delete(request, id):
+# 	lista_pers = Personal.objects.get(pk=id)
+# 	lista_pers.delete()
+# 	return redirect('/users/list_personal/')
 
 
 

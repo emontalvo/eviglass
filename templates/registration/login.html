@@ -1,0 +1,62 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Admin - Dashboard</title>
+
+    <!-- LOADING CSS BOOTSTRAP V.4.1.3 -->
+    <link rel="stylesheet" href="/static/css/apps.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/users/app-user.css">
+
+
+    <!-- Custom styles for this template-->
+    <link rel="stylesheet" href="/static/css/users/sb-admin.css">
+    <link rel="stylesheet" href="/static/css/users/all.min.css">
+
+    <link rel="stylesheet" href="/static/css/bootstrap-glyphicons.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/glyphicons-fontawesome.min.css" type="text/css">
+
+    
+  <!-- LOADING JS BOOTSTRAP V.4.1.3 -->
+
+    <script src="/static/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+
+
+
+    
+</head>
+
+<body>
+{% load crispy_forms_tags %}
+
+
+<div>
+	
+
+<h2><center>Log In</center></h2>
+<form method="POST">
+  {% csrf_token %}
+  {{form|crispy}} 
+  
+  <button type="submit" class="btn btn-success btn-lg">Ingresar</button>
+
+</form>
+
+</div>
+  	
+</body>
+</html>

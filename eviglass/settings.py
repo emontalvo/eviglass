@@ -38,11 +38,23 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    ### DJANGO LIBRARIES ###
+    'crispy_forms',
+    ### END DJANGO LIBRARIES ###
+
+
+
+    ### APPS PROJECT EVIGLASS ###
     'apps.inicio',
 
     'apps.users.admin_sistemas',
     # 'apps.inicio.apps.InicioConfig',
+    ### END APPS PROJECT EVIGLASS ###
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -138,4 +150,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
+LOGIN_REDIRECT_URL = '/users/list_personal/'
+
+LOGOUT_REDIRECT_URL = '/accounts/login/'
+
+
 
