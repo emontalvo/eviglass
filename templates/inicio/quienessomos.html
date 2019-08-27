@@ -12,14 +12,14 @@
 	    <div class="container">
 	        <div class="navbar-header">
 	        
-	        	<h4 style="font-weight: 900;">NOVEDADES</h4>
+	        	<h4 style="font-weight: 900;">QUINES SOMOS</h4>
 
 	        </div>
 	        <div class="collapse navbar-collapse" style="Semibold:30px;">
 		        <ul class="nav navbar-nav pull-right">
 
 		        	<li><a href="/Portal/">Inicio</a></li>
-		        	<li><a href="/novedades/">/ Novedades</a></li>
+		        	<li><a href="/novedades/">/ Quienes Somos</a></li>
 
 		        </ul>
 	        </div><!--/.nav-collapse --> 
@@ -36,50 +36,15 @@
 	<section id="color-section" class="degradado-section">
 
 		<div style="text-align: rigth;">
-			<h5 class=""> TIPOS DE PRODUCTOS</h5>  
+			<h5 class=""> COMO EMPRESA</h5>  
 		</div>
 
 
 	</section >
 
 	<!-- SECCION PAPA MOSTRA JARRAS -->
-	<section id="recent-works" class="degradado-cabeza">
-
-			<div style="text-align: center;">
-				<h4 class=""> M O D E L O S </h4>  
-			</div>
-		
-		<hr class="prettyline">
 
 
-	</section >
-	<section id="color-section-galery">
-
-		<div class="row">
-			{% for lista_prod in producto %}
-			<div class="col-sm-6 col-md-3">
-				<div class="thumbnail style-margin" id="border-thumbnail">
-					 
-					<img src="{{MEDIA_URL}}{{lista_prod.imagen}}" alt="">
-					<div class="caption">
-						<h3 style = "color:#0A6BFD;">{{lista_prod.nombre}}</h3>
-						<div style = "color:#003965;">
-							TIPO: {{lista_prod.tipo}}<br>
-							DETALLE: {{lista_prod.detalle}}<br>
-							CODIGO: {{lista_prod.codigo}}<br>
-							PRECIO-FÁBRICA: {{lista_prod.precio}}
-						</div>
-						
-					</div>
-					
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-		<br>
-
-	</section >
-<!--END SECCION PAPA MOSTRA JARRAS -->
 
 <!-- SECTION FOOTER BODY-->	
 	<section id="recent-works" class="contact-bg">

@@ -40,12 +40,12 @@
 	    <tbody>
 	    	{% for lista_pers in personal %}
 	        <tr>
-	            <td><h4>{{forloop.counter}}</h4></td>
-	            <td><h4>{{lista_pers.nombre}}</h4></td>
+	            <td>{{forloop.counter}}</td>
+	            <td>{{lista_pers.nombre}}</td>
 	            {# <td><h4>{{lista_pers.ci}}</h4></td> #}
 	            {# <td><h4>{{lista_pers.email}}</h4></td> #}
-	            <td><h4>{{lista_pers.direccion}}</h4></td>
-				<td><h4>{{lista_pers.telefono}}</h4></td>
+	            <td>{{lista_pers.direccion}}</td>
+				<td>{{lista_pers.telefono}}</td>
 				{# <td><h4>{{lista_pers.cargo}}</h4></td> #}
 
 				<td><a class="btn btn-info" href="/edit/{{lista_pers.id}}">Editar</a>

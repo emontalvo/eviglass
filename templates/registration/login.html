@@ -43,19 +43,36 @@
 <body>
 {% load crispy_forms_tags %}
 
-
-<div>
+<div class="body-bg">
+<div class="w-100 p-5">
 	
 
-<h2><center>Log In</center></h2>
-<form method="POST">
-  {% csrf_token %}
-  {{form|crispy}} 
-  
-  <button type="submit" class="btn btn-success btn-lg">Ingresar</button>
+<h2><center>Iniciar Sesion</center></h2>
 
+
+<form class="" method="post">
+    {% csrf_token %}
+    <center><div class="content container">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.username|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ form.password|as_crispy_field }}
+      </div>
+
+
+      <div class="form-group col-md-6 mb-0">
+        <button type="submit" class="btn btn-success btn-lg">Ingresar</button>
+      </div>
+      
+    </div></center>
+    
 </form>
 
+
+</div>
+</div>
+  
 </div>
   	
 </body>

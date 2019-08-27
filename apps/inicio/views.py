@@ -23,7 +23,8 @@ def index(request):
 
 
 
-
+class QuienesSomos(TemplateView):
+	template_name = 'inicio/quienessomos.html'
 
 
 class Novedades(TemplateView):
