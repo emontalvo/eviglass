@@ -37,6 +37,13 @@
   width: 100%;
 }
 
+
+.imgnormalizada img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
+
 /*END STYLE CAROUSEL*/
 
 
